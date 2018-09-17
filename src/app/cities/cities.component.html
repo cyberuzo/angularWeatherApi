@@ -1,0 +1,41 @@
+
+
+<h2>My Cities</h2>
+<ul class="cities">
+  <li *ngFor="let city of cities"
+      [class.selected]="city === selectedCity"
+      (click)="onSelect(city)">
+    <span class="badge">{{city.id}}</span> {{city.name}}
+  </li>
+</ul>
+
+
+<div *ngIf="selectedCity">
+
+  <h2>{{ selectedCity.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{selectedCity.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedCity.name" placeholder="name">
+    </label>
+  </div>
+</div>
+
+
+<!--
+<app-city-detail [city]="selectedCity"></app-city-detail>
+
+ <h2></h2>
+
+<ul class="cities">
+  <li *ngFor="let city of cities">
+    <a routerLink="/detail/{{city.id}}">
+      <span class="badge">{{city.id}}</span> {{city.name}}
+    </a>
+
+  </li>
+
+
+</ul>
+
+-->

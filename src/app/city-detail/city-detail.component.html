@@ -1,0 +1,37 @@
+
+<div *ngIf = "!city ; else other" class="quarter-width">
+
+
+    <h2>{{ city.name }}'s Weather Today</h2>
+  <img src="../assets/images/Sunny-icon.png" width="200px" align="center">
+
+
+  We will be having sunny skies
+    <div><span>The temperature in </span>{{city.name}} is </div>
+
+
+    <div>
+        <label>Temperature mode:
+        </label>
+    </div>
+
+</div>
+<!--<div class="center">
+  <button (click)="goBack()">go back</button>
+</div>-->
+
+
+<ng-template #other>
+  <h2>{{ city.name }}'s Weather Today</h2>
+  <img src="../assets/images/Sunny-icon.png" width="200px" align="center">
+
+
+  We will be having sunny skies
+  <div><span>The temperature in </span>{{city.name}} is </div>
+
+
+  <div>
+    <label>Temperature mode:
+    </label>
+  </div></ng-template>
+

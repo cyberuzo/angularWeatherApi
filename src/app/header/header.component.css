@@ -1,0 +1,16 @@
+.headerstyle{
+
+  background-image: url("../../assets/images/weather-hero.jpg");
+  width: 70%;
+  height: 140px;
+}
+.headerstyle h2  {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+}
+

@@ -1,0 +1,76 @@
+<div *ngIf = "!selectedCity; else SelectedCity">
+  <div class="row">
+    <div class="col-6 center" style="background-color: #7188a8; padding: 20px; margin: 0 auto ">
+      <h3>Loading...</h3>
+    </div>
+  </div>
+
+  <!--<h3 class= "text-center grey-color"> {{cities[0].name}}'s Weather Today</h3>-->
+  <!--<br><br>-->
+
+  <!--<div class="row">-->
+      <!--<div class="col-6 center" style="background-color: #00b3b3; padding: 20px; margin: 0 auto ">-->
+          <!--<h5 class="text-center" style="color: #FFFFFF"> Monday, 10 Sept</h5>-->
+          <!--<br>-->
+          <!--<p class="text-center fontIcon"> <i class="fas fa-sun"></i></p>-->
+
+          <!--<h2 class="text-center" style="color: #FFFFFF">28 &#8451;</h2>-->
+
+
+      <!--</div>-->
+  <!--</div>-->
+
+<!--
+    <div class="col-sm">
+      <h5>Thursday, 13 Sept</h5>
+      <br>
+      <img src="../assets/images/rainbow.PNG" width="80px" align="center">
+      <h3>13 &#8451;</h3>
+
+    </div>
+
+
+    <div class="col-sm">
+      <h5>Friday, 14 Sept</h5>
+      <br>
+      <img src="../assets/images/sunny.PNG" width="80px" align="center">
+      <h3>20 &#8451;</h3>
+
+    </div>-->
+  </div>
+
+
+
+
+<div>
+
+  <ng-template #SelectedCity>
+
+    <br><br>
+    <h3 class= "text-center grey-color">{{selectedCity.name}}'s Weather Today </h3>
+    <br><br>
+    <div class="row">
+      <div class="col-6 center" style="background-color: #727268; padding: 20px; margin: 0 auto">
+        <h5 class="text-center" style="color: #FFFFFF">{{selectedCity.localtime}}</h5>
+        <br>
+        <p class="text-center fontIcon"> <img width="100px" src="{{currentCityWeather.condition.icon}}"></p>
+        <h3 class="text-center" style="color: #FFFFFF">{{currentCityWeather.temp_c}} &#8451;</h3>
+        <h3 class="text-center" style="color: #FFFFFF">{{currentCityWeather.condition.text}}</h3>
+      </div>
+    </div>
+
+  </ng-template>
+</div>
+
+<br />
+<!-- The grid list of cities below-->
+<div class="grid grid-pad center">
+
+  <h3 class= "text-center grey-color" >Please select a city</h3>
+  <br> <br>
+  <div *ngFor="let city of cities" class="col-2" (click) = "onSelect(city)">
+    <div class="module city">
+      <h4>{{city.name}}</h4>
+    </div>
+  </div>
+</div>

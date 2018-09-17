@@ -1,0 +1,10 @@
+[
+  {
+  "context": ["/api/v1"],
+  "target": "192.168.8.101:8080",
+  "secure": false,
+  "logLevel": "debug",
+  "changeOrigin": true
+
+  }
+]

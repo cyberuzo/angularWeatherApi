@@ -1,0 +1,41 @@
+<!--
+
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-header">
+        <a href="https://openweathermap.org/" target="_blank">Open Weather Map Data</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Current Data</h5>
+        <p>Lat: {{uvIndexOpenWeatherMap?.lat}} </p>
+        <p>Long: {{uvIndexOpenWeatherMap?.lon}} </p>
+        <p>Date ISO: {{uvIndexOpenWeatherMap?.date_iso | date}} </p>
+        <p>UV Index Value: {{uvIndexOpenWeatherMap?.value}} </p>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-lg btn-primary" (click)="refresh()">Refresh</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a href="https://www.openuv.io/" target="_blank">Open UV Data</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Current Data</h5>
+        <p>UV Time: {{uvIndexOpenUV?.result.uv_time | date:'longTime'}} </p>
+        <p>UV Max: {{uvIndexOpenUV?.result.uv_max}} </p>
+        <p>UV Max Time: {{uvIndexOpenUV?.result?.uv_max_time | date:'longTime'}} </p>
+        <p>Ozone: {{uvIndexOpenUV?.result.ozone}} </p>
+        <p>Ozone Time: {{uvIndexOpenUV?.result.ozone_time | date:'longTime'}} </p>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-lg btn-primary" (click)="refresh()">Refresh</button>
+      </div>
+    </div>
+  </div>
+  <div>
+  </div>
+  <br>
+</div>
+-->
