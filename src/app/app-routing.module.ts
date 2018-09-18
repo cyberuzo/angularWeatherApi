@@ -8,6 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
 import {WeatherComponent} from './weather/weather.component';
+import {MainComponent} from './main/main.component';
+import {DisplayComponent} from './display/display.component';
 
 const routes: Routes = [
   { path: 'cities', component: CitiesComponent },
@@ -17,8 +19,9 @@ const routes: Routes = [
   { path: 'cities', component: CitiesComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'weatherdetail', component: WeatherComponent }
-
+  { path: 'weatherdetail', component: WeatherComponent },
+  {path: 'main', component: MainComponent },
+  {path: 'display', component: DisplayComponent}
 ];
 
 

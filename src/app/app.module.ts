@@ -19,6 +19,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { MainComponent } from './main/main.component';
+import { DisplayComponent } from './display/display.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { RegisterComponent } from './register/register.component';
     HeroSearchComponent,
    // CitySearchComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    MainComponent,
+    DisplayComponent
   ],
   imports: [
     BrowserModule,
